@@ -2,10 +2,10 @@ var cocktailImg = document.getElementById("cocktailImg");
 var brewImg = document.getElementById("breweryImg");
 
 
-brewImg.addEventListener("click", () => {
-    console.log("click");
-});
+function brew() {
+    console.log("cliccccccc");
+  }
 
-cocktailImg.addEventListener("click", () => {
-    console.log("click");
-});
+function cocktail() {
+    console.log("clic");
+  }
