@@ -3,9 +3,9 @@ var brewImg = document.getElementById("breweryImg");
 
 
 function brew() {
-    console.log("cliccccccc");
+    window.location.href = 'brew.html';
   }
 
 function cocktail() {
-    console.log("clic");
+   window.location.href = 'cocktail.html';
   }
