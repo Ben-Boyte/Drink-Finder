@@ -1,10 +1,15 @@
-const searchTxt = document.getElementById('searchText').value;
+const searchTxt = document.getElementById("searchText");
 const searchBtn = document.getElementById('searchBtn').addEventListener('click', (search));
 
 function search() {
-    var results = ("https://api.openbrewerydb.org/breweries/search?query=" + (searchTxt));
+
+    const searchResult = searchTxt.value;   
+   
+    var results = ("https://api.openbrewerydb.org/breweries/search?query=" + searchResult);
+
     console.log(results);
-  };
+
+};
 
 //let response = fetch(url);
 
