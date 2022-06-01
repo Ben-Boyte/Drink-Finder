@@ -1,19 +1,24 @@
-API_key = 1;
+const API_key = 1;
 
 var randomCocktail = function() {
-    API_key = 1
-    fetch("www.thecocktaildb.com/api/json/v1/1/random.php");
+    fetch("https://thecocktaildb.com/api/json/v1/1/random.php");
 };
 
 document.querySelector("#cocktail-button").addEventListener("click", function(event) {
-    console.log("Test")
+
+    const cocktailFinder = "https://thecocktaildb.com/api/json/v1/1/random.php";
+
+    fetch(cocktailFinder);
+
+    console.log(randomCocktail);
+
    });
 
 var displayCocktail = function(){
    
     for (var i = 0; i < cocktail.length; i++) {
 
-    var repoName = repos[i].owner.login + "/" + repos[i].name;
+    var cocktailName = cocktail[i].strDrink
     
     var cocktailEl = document.createElement("div");
     var titleEl = document.createElement("span");
