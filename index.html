@@ -7,19 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Drink Finder</title>
 </head>
-<body>
+<body class="bg-slate-600 text-amber-500" > 
     <header><h1>DRINK FINDER</h1></header>
 
     <div>Click an image below to decide the kind of night you're in for!</div>
-
+    
     <div>
         <h2>Cocktails</h2>
-        <button onclick="cocktail()" id="cocktailImg"><img src="./assets/images/drinking on couch.png" alt="Cocktails"></button>    
+        <button class="shadow-2xl" onclick="cocktail()" id="cocktailImg"><img class="rounded-lg" src="./assets/images/drinking on couch.png" alt="Cocktails"></button>    
     </div>
 
     <div>
         <h2>Local Breweries</h2>
-        <button onclick="brew()" id="breweryImg"><img src="./assets/images/sunny.png" alt="Breweries"></button>
+        <button class="shadow-2xl" onclick="brew()" id="breweryImg"><img class="rounded-lg" src="./assets/images/sunny.png" alt="Breweries"></button>
     </div>
 
     <script src="./assets/js/style.js"></script>
