@@ -5,17 +5,21 @@ function search() {
 
     const searchResult = searchTxt.value;   
    
-    var results = ("https://api.openbrewerydb.org/breweries/search?query=" + searchResult);
+    const results = "https://api.openbrewerydb.org/breweries/search?query=" + searchResult;
+    
+    let response = fetch(results);
 
-    console.log(results);
+    
 
+    fetch(results)
+.then(response => response.text())
+.then(data => console.log(data));
+    
 };
 
-//let response = fetch(url);
 
-//fetch(url)
-//.then(response => response.text())
-//.then(data => console.log(data));
+
+
 
 // async function fetchText() {
 //     let response = await fetch(url);
