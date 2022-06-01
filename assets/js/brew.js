@@ -7,24 +7,17 @@ function search() {
    
     const results = "https://api.openbrewerydb.org/breweries/search?query=" + searchResult;
     
-    let response = fetch(results);
-
-    
 
     fetch(results)
-.then(response => response.text())
-.then(data => console.log(data));
-    
+
+.then(function(response){
+    return response.json();
+})
+
+.then(function(data) {
+const brewName = data[0].name;
+const brewStreet = data[0].street;
+console.log(brewName, brewStreet)
+});
+
 };
-
-
-
-
-
-// async function fetchText() {
-//     let response = await fetch(url);
-//     let data = await response.text();
-//     console.log(data);
-// }
-
-//fetchText();
