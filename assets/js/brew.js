@@ -18,7 +18,8 @@ function search() {
 const brewName = data[0].name;
 const brewStreet = data[0].street;
 console.log(brewName, brewStreet)
-});
 
+
+});
 
 };
