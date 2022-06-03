@@ -14,14 +14,14 @@ const clickButton = document.querySelector("#cocktail-button").addEventListener(
         console.log(cocktail, cocktailRecipe);
 
         const drink = document.getElementById('drink');
-        const drinkEl = document.createElement('div');
+        const drinkEl = document.createElement('li');
         const titleEl = document.createElement('span');
         titleEl.textContent = cocktail;
         drinkEl.appendChild(titleEl);
         drink.appendChild(drinkEl);
 
         const recipe = document.getElementById('recipe');
-        const recipeEl = document.createElement('div');
+        const recipeEl = document.createElement('li');
         const spanEl = document.createElement('span');
         spanEl.textContent = cocktailRecipe;
         recipeEl.appendChild(spanEl);
