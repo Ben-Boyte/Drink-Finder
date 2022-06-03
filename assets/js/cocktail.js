@@ -14,19 +14,19 @@ document.querySelector("#cocktail-button").addEventListener("click", function(ev
 
    });
 
-var displayCocktail = function(){
+// var displayCocktail = function(){
    
-    for (var i = 0; i < cocktail.length; i++) {
+//     for (var i = 0; i < cocktail.length; i++) {
 
-    var cocktailName = cocktail[i].strDrink
+//     var cocktailName = cocktail[i].strDrink
     
-    var cocktailEl = document.createElement("div");
-    var titleEl = document.createElement("span");
+//     var cocktailEl = document.createElement("div");
+//     var titleEl = document.createElement("span");
     
-    titleEl.textContent = cocktailName;
+//     titleEl.textContent = cocktailName;
     
-    cocktailEl.appendChild(titleEl);
+//     cocktailEl.appendChild(titleEl);
     
-    cocktailContainerEl.appendChild(cocktailEl);
-   };
-}
+//     cocktailContainerEl.appendChild(cocktailEl);
+//    };
+// }
