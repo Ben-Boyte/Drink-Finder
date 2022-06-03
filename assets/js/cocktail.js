@@ -1,7 +1,5 @@
 const clickButton = document.querySelector("#cocktail-button").addEventListener("click", (findCocktail));
 
-<<<<<<< HEAD
-    
     function findCocktail() {
     
     const APIkey = 1;
@@ -32,35 +30,3 @@ const clickButton = document.querySelector("#cocktail-button").addEventListener(
 
     })
 };
-=======
-var randomCocktail = function() {
-    fetch("https://thecocktaildb.com/api/json/v1/1/random.php");
-};
-
-document.querySelector("#cocktail-button").addEventListener("click", function(event) {
-
-    const cocktailFinder = "https://thecocktaildb.com/api/json/v1/1/random.php";
-
-    fetch(cocktailFinder);
-
-    console.log(randomCocktail);
-
-   });
-
-// var displayCocktail = function(){
-   
-//     for (var i = 0; i < cocktail.length; i++) {
-
-//     var cocktailName = cocktail[i].strDrink
-    
-//     var cocktailEl = document.createElement("div");
-//     var titleEl = document.createElement("span");
-    
-//     titleEl.textContent = cocktailName;
-    
-//     cocktailEl.appendChild(titleEl);
-    
-//     cocktailContainerEl.appendChild(cocktailEl);
-//    };
-// }
->>>>>>> 09cd9ba6ff9413773da3fcddcc46f4cbcbf07bc0
