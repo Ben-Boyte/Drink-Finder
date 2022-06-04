@@ -10,27 +10,47 @@
     <title>Drink Finder</title>
 </head>
 
-<body class="bg-slate-600 text-amber-500" > 
-    <header><h1 class="flex justify-center">DRINK FINDER</h1></header>
+<body class="bg-slate-600 text-orange-400" > 
 
-    <div class="flex justify-center">Click an image below to decide what kind of drink you'll have!</div>
 
-    <img id="arrow" class="flex flex-col animate-bounce" src="assets/images/orange arrow_adobe_express.png" alt="arrow"/>
-    
-    <container class="flex flex-col lg:flex-row">
+    <container class="flex flex-col lg:flex-row justify-center">
+        <img src="assets/images/drink finder logo.png" alt="The Drink Finder"/>
+    </container>
+
+    <div class="flex justify-center font-sans text-2xl pt-3 pb-10">Click an image below to decide the kind of night you're in for!</div>
+
+
+    <container class="flex flex-col lg:flex-row justify-around">
         <div>
-            <h2 class="flex justify-center">Cocktails<i class="fa-solid fa-martini-glass-citrus fa-1x"></i></h2>
-            <button class="shadow-2xl" onclick="cocktail()" id="cocktailImg"><img class="rounded-lg hover:hue-rotate-180" src="./assets/images/drinking on couch.png" alt="Cocktails"></button>    
+
+            <h2 class="flex justify-center font-sans text-2xl pt-5">Cocktails</h2>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img class="rounded-lg" src="./assets/images/drinking on couch.png" alt="Cocktails">
+                        </div>
+                        <div class="flip-box-back">
+                            <button onclick="cocktail()" id="cocktailImg"><i class="fa-solid fa-martini-glass-citrus fa-10x"></i></button>
+                        </div>
+                    </div>
+                </div>    
         </div>
 
         <div>
-            <h2 class="flex justify-center">Local Breweries<i class="fa-solid fa-beer-mug-empty fa-1x"></i></h2>
-           
-            <button class="shadow-2xl" onclick="brew()" id="breweryImg"><img class="rounded-lg hover:hue-rotate-180" src="./assets/images/sunny.png" alt="Breweries"></button>
+            <h2 class="flex justify-center font-sans text-2xl pt-3">Local Breweries</h2>
+                <div class="flip-box rounded-lg">
+                    <div class="flip-box-inner rounded-lg">
+                        <div class="flip-box-front rounded-lg">
+                            <img class="rounded-lg" src="./assets/images/sunny.png" alt="Breweries">
+                        </div>
+                        <div class="flip-box-back rounded-lg">
+                            <button onclick="brew()" id="breweryImg"><i class="fa-solid fa-beer-mug-empty fa-10x"></i></button>
+                        </div>
+                    </div>
+                </div>    
         </div>
     </container>
 
-    <img id="arrow2" class=" flex flex-col animate-bounce" src="assets/images/orange arrow copy_adobe_express.png" alt="arrow"/>
     <script src="./assets/js/style.js"></script>
 </body>
 </html> 
