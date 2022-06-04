@@ -1,5 +1,6 @@
 const searchTxt = document.getElementById("searchText");
 const searchBtn = document.getElementById('searchBtn').addEventListener('click', (search));
+//const container = document.getElementById('container');
 
 function search() {
 
@@ -19,7 +20,21 @@ const brewName = data[0].name;
 const brewStreet = data[0].street;
 console.log(brewName, brewStreet)
 
+const container = document.getElementById('container');
+const brewEl = document.createElement("li");
+const titleEl = document.createElement("span");
+titleEl.textContent = brewName;
+brewEl.appendChild(titleEl);
+container.appendChild(brewEl);
+
+const address = document.getElementById('address');
+const divEl = document.createElement("li");
+const spanEl = document.createElement("span");
+spanEl.textContent = brewStreet;
+divEl.appendChild(spanEl);
+address.appendChild(divEl);
 
 });
+
 
 };
