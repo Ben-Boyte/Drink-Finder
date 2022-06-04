@@ -1,0 +1,16 @@
+.breweryImg {
+    width: 45%;
+    height: auto;
+  
+}
+
+.text-black {
+    width: 50%;
+    background-color: rgb(251 146 60);
+    color: rgb(71 85 105);
+    opacity: 80%;
+}
+
+.btn {
+    width: 50%;
+}
