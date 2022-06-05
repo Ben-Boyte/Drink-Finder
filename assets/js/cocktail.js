@@ -10,8 +10,10 @@ const clickButton = document.querySelector("#cocktail-button").addEventListener(
     .then(response => response.json()).then(data => {
         
          const cocktail = (data.drinks[0].strDrink);
+
          const cocktailRecipe = (data.drinks[0].strInstructions);
-        console.log(cocktail, cocktailRecipe);
+        
+         console.log(cocktail, cocktailRecipe);
 
         const drink = document.getElementById('drink');
         const drinkEl = document.createElement('li');
@@ -23,10 +25,16 @@ const clickButton = document.querySelector("#cocktail-button").addEventListener(
         const recipe = document.getElementById('recipe');
         const recipeEl = document.createElement('li');
         const spanEl = document.createElement('span');
-        spanEl.textContent = cocktailRecipe;
+        spanEl.textContent = cocktailRecipe
         recipeEl.appendChild(spanEl);
         recipe.appendChild(recipeEl);
 
+        }
+    )};
 
-    })
-};
+var clearButton = document.querySelector("#cocktail-button").addEventListener("click", (clearCocktail));
+
+    function clearCocktail() {
+        document.getElementById('drink').innerHTML = '';
+        document.getElementById('recipe').innerHTML = '';
+    };
