@@ -1,7 +1,7 @@
 const clickButton = document.querySelector("#cocktail-button").addEventListener("click", (findCocktail));
 
     function findCocktail() {
-    
+      
     const APIkey = 1;
     var cocktailFinder = "https://thecocktaildb.com/api/json/v1/1/random.php";
 
